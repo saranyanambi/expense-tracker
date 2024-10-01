@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import "./Home.css";
 import Wallet from "../Wallet/Wallet";
-// import ExpenseTable from "../ExpenseTable/ExpenseTable"
+import ExpenseTable from "../ExpenseTable/ExpenseTable"
 // import LineChart from "../LineChart/LineChart";
 const Home=()=>{
 
