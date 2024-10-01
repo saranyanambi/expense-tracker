@@ -34,7 +34,14 @@ const handleexpenseUpdate=(expense)=>{
     return(
         <div className="total-conatiner">
         <Wallet categories={categories} Balance={Balance} setBalance={setBalance} expense={expense} setExepense={setExepense} handleexpenseUpdate={handleexpenseUpdate}/>
-       
+        {
+            expense.length >0&&
+            <div className="expense-linechart-container">
+                <ExpenseTable categories={categories} expense={expense} handleexpenseUpdate={handleexpenseUpdate}/>
+                
+                
+                </div>
+        }
         </div>
     )
 }

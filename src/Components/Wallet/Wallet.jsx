@@ -3,7 +3,7 @@ import { useEffect,useState } from "react";
 // import Modal from "react-modal";
 import Model from "react-modal";
 import "./Wallet.css";
-import Example from "../Piechart/Piechart";
+import Piechart from "../Piechart/Piechart";
 // import Piechart from "../PieChart/PieChart"
 const Wallet=({categories,Balance,setBalance,expense,setExepense,handleexpenseUpdate})=>{
     console.log(expense)
@@ -102,8 +102,8 @@ const Wallet=({categories,Balance,setBalance,expense,setExepense,handleexpenseUp
                     <h1 className="head">Wallet Balance:<span>5000</span></h1>
                     <button onClick={()=>setExpenseform(!expenseform)} className="addexpense">+Add expense</button>
                 </div>
-                {/* <Piechart expense={expense}/> */}
-                <Example/>
+                <Piechart expense={expense}/>
+                
                 </div>
                 <div>
                     <Model

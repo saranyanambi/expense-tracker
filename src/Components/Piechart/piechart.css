@@ -2,4 +2,15 @@
     width: 100%;    /* or a specific width */
     height: 400px;  /* or a specific height */
   }
-  
+  .piechart-container{
+    position: relative;
+    width: 100%;
+}
+ .recharts-legend-wrapper {
+    position: absolute !important;
+    width: 290px !important;
+    height: auto !important;
+    left: 5px !important;
+    bottom: 2rem !important;
+} 
+
