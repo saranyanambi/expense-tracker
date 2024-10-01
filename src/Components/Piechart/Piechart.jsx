@@ -43,7 +43,7 @@ const Piechart=({expense})=>{
     }
     const pieChartData=filterCategory(expense);
     return(
-        <div  className="piechart-container">
+       
         <ResponsiveContainer width="100%" height={300}>
     <PieChart width={300} height={300}>
         <Pie
@@ -64,7 +64,7 @@ const Piechart=({expense})=>{
             <Legend style={{position:"absolute", bottom:"2rem"}}/>
     </PieChart>
     </ResponsiveContainer>
-    </div>
+    
     )
 }
 
