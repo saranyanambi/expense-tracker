@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
-
+import React  from 'react';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import "./piechart.css";
 const data = [
   { name: 'Group A', value: 400 },
   { name: 'Group B', value: 300 },
@@ -24,10 +24,11 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 };
 
 export default function Example () {
-  //static demoUrl = 'https://codesandbox.io/s/pie-chart-with-customized-label-dlhhj';
+  
 
   
     return (
+        <div className='chart-container'>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
           <Pie
@@ -46,6 +47,7 @@ export default function Example () {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
+      </div>
     );
   }
 
